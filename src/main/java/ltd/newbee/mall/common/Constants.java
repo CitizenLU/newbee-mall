@@ -24,7 +24,7 @@ public class Constants {
     /**
      * 上传文件的默认url前缀，根据部署设置自行修改
      */
-    public final static String FILE_UPLOAD_DIC = "D:\\upload\\";
+    public final static String FILE_UPLOAD_DIC = "D:\\_datas\\upload\\";
 
     /**
      * 首页轮播图数量(可根据自身需求修改)
