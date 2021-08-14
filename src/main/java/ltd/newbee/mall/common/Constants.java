@@ -17,14 +17,14 @@ package ltd.newbee.mall.common;
  */
 public class Constants {
     /**
-     * 上传文件的默认url前缀，根据部署设置自行修改
+     * 是否为Linux
      */
-    // public final static String FILE_UPLOAD_DIC = "/opt/image/upload/";
+    private final static boolean isUnix = false;
 
     /**
      * 上传文件的默认url前缀，根据部署设置自行修改
      */
-    public final static String FILE_UPLOAD_DIC = "D:\\_datas\\upload\\";
+    public final static String FILE_UPLOAD_DIC = isUnix ? "/opt/newbee/image/upload/" : "D:\\_datas\\upload\\";
 
     /**
      * 首页轮播图数量(可根据自身需求修改)
