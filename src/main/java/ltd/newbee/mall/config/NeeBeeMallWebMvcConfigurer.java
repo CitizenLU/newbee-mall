@@ -28,6 +28,7 @@ public class NeeBeeMallWebMvcConfigurer implements WebMvcConfigurer {
     @Autowired
     private NewBeeMallCartNumberInterceptor newBeeMallCartNumberInterceptor;
 
+    @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 添加一个拦截器，拦截以/admin为前缀的url路径（后台登陆拦截）
         registry.addInterceptor(adminLoginInterceptor)
@@ -59,6 +60,7 @@ public class NeeBeeMallWebMvcConfigurer implements WebMvcConfigurer {
                 .addPathPatterns("/payPage");
     }
 
+    @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/upload/**").addResourceLocations("file:" + Constants.FILE_UPLOAD_DIC);
         registry.addResourceHandler("/goods-img/**").addResourceLocations("file:" + Constants.FILE_UPLOAD_DIC);
